@@ -1,26 +1,31 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Navbar from "./components/navbar";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import HomePage from "./pages/homePage";
+import Footer from "./components/footer";
+import ProjectPage from "./pages/projectPage";
+import Page404 from "./pages/page404";
+import AboutPage from "./pages/aboutPage";
+import PhotoPage from "./pages/photoPage";
+import ResumePage from "./pages/resumePage";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <BrowserRouter>
+        <React.Fragment>
+          <Navbar />
+          <Switch>
+            <Route path="/" component={HomePage} exact />
+            <Route path="/resume" component={ResumePage} />
+            <Route path="/projects" component={ProjectPage} />
+            <Route path="/photos" component={PhotoPage} />
+            <Route path="/about" component={AboutPage} />
+            <Route component={Page404} />
+          </Switch>
+          <Footer />
+        </React.Fragment>
+      </BrowserRouter>
     );
   }
 }

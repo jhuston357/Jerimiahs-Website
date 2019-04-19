@@ -11,7 +11,7 @@ class ResumePage extends Component {
           width="100%"
           height="100%"
           frameborder="0"
-          src="https://docs.google.com/gview?url=localhost:3000/media/files/Resume.docx&embedded=true"
+          src="https://docs.google.com/document/d/1sDOBzIUkSE6jMIO6p8gQHaSHByfZbpsiNtXjhVVZm0E/edit?usp=sharing"
         />
       </div>
     );

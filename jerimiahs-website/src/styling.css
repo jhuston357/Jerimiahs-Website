@@ -13,13 +13,6 @@
   outline: none;
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  color: #002868;
-}
-
 .navspace {
   margin-bottom: 83px;
 }
@@ -168,6 +161,9 @@ td {
 }
 
 @media (max-width: 768px) {
+  .padding {
+    font-size: 100px;
+  }
   .landing-text h1 {
     font-size: 300%;
     font-weight: 300;

@@ -16,7 +16,7 @@ class ProjectPage extends Component {
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-auto text-center">
               <h3>
-                <a href="/chuckapp.html">CHUCK QUOTES IOS APP</a>
+                <a href="/chuckapp">CHUCK QUOTES IOS APP</a>
               </h3>
               <h4>(C#,XAMARIM,LAMP)</h4>
               <p>

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-var cors = require("cors");
 
 class ChuckAppPage extends Component {
   state = {
@@ -7,7 +6,6 @@ class ChuckAppPage extends Component {
   };
 
   componentDidMount() {
-    var { chucks } = this.state;
     fetch("http://ec2-3-19-68-119.us-east-2.compute.amazonaws.com/api/chucks")
       .then(res => res.json())
       .then(json => {

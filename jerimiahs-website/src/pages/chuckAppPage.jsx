@@ -24,11 +24,26 @@ class ChuckAppPage extends Component {
             </div>
           </div>
           <div className="row">
-            <ul>
+            <table className="table table-hover">
+              <thead className="thead-dark">
+                <tr>
+                  <th>ID</th>
+                  <th>ChuckQuote</th>
+                  <th>EnteredBy</th>
+                  <th>QuoteDate</th>
+                </tr>
+              </thead>
               {chucks.map(chucks => (
-                <li key={chucks.ID}>{chucks.ChuckQuote}</li>
+                <tbody key={chucks.ID}>
+                  <tr>
+                    <td>{chucks.ID}</td>
+                    <td>{chucks.ChuckQuote}</td>
+                    <td>{chucks.EnteredBy}</td>
+                    <td>{chucks.QuoteDate}</td>
+                  </tr>
+                </tbody>
               ))}
-            </ul>
+            </table>
           </div>
         </div>
       </div>

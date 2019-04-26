@@ -8,6 +8,7 @@ import Page404 from "./pages/page404";
 import AboutPage from "./pages/aboutPage";
 import PhotoPage from "./pages/photoPage";
 import ResumePage from "./pages/resumePage";
+import ChuckAppPage from "./pages/chuckAppPage";
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
             <Route path="/projects" component={ProjectPage} />
             <Route path="/photos" component={PhotoPage} />
             <Route path="/about" component={AboutPage} />
+            <Route path="/chuckapp" component={ChuckAppPage} />
             <Route component={Page404} />
           </Switch>
           <Footer />

@@ -9,7 +9,7 @@ class AboutPage extends Component {
           <div class="row text-center">
             <div class="col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-4 offset-sm-4 text-center">
               <hr />
-              <img src={logo} />
+              <img src={logo} alt="" />
               <hr />
               <p> 724-980-8867 </p>
               <p> Jhuston357@live.com </p>

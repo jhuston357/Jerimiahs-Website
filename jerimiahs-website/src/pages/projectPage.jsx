@@ -16,7 +16,7 @@ class ProjectPage extends Component {
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 my-auto text-center">
               <h3>
-                <a href="/chuckapp.html">CHUCK QUOTES IOS APP</a>
+                <a href="/chuckapp">CHUCK QUOTES IOS APP</a>
               </h3>
               <h4>(C#,XAMARIM,LAMP)</h4>
               <p>
@@ -32,11 +32,11 @@ class ProjectPage extends Component {
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <img src={calistscreen} />
+              <img src={calistscreen} alt="" />
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <img src={caeditscreen} />
+              <img src={caeditscreen} alt="" />
             </div>
           </div>
         </div>

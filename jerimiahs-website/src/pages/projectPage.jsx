@@ -32,11 +32,11 @@ class ProjectPage extends Component {
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <img src={calistscreen} />
+              <img src={calistscreen} alt="" />
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <img src={caeditscreen} />
+              <img src={caeditscreen} alt="" />
             </div>
           </div>
         </div>

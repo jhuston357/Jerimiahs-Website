@@ -22,7 +22,11 @@ class App extends Component {
             <Route path="/projects" component={ProjectPage} />
             <Route path="/photos" component={PhotoPage} />
             <Route path="/about" component={AboutPage} />
+<<<<<<< HEAD
             <Route path="/chuckapp" componet={ChuckAppPage} />
+=======
+            <Route path="/chuckapp" component={ChuckAppPage} />
+>>>>>>> master
             <Route component={Page404} />
           </Switch>
           <Footer />

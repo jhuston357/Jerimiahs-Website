@@ -6,7 +6,7 @@ class ChuckAppPage extends Component {
   };
 
   componentDidMount() {
-    fetch("https://ec2-3-19-68-119.us-east-2.compute.amazonaws.com/api/chucks")
+    fetch("http://jherver.tk/api/chucks")
       .then(res => res.json())
       .then(json => {
         this.setState({ chucks: json });
@@ -48,27 +48,6 @@ class ChuckAppPage extends Component {
         </div>
       </div>
     );
-  }
-
-  jsontotable(json) {
-    var output = "";
-    var ckarr = JSON.parse(json);
-    output =
-      "<table style='width:100%'><tr><th>ID</th><th>ChuckQuote</th><th>EnteredBy</th><th>QuoteDate</th></tr>";
-    for (var x in ckarr) {
-      output =
-        output +
-        "<tr><td>" +
-        ckarr[x].ID +
-        "</td><td>" +
-        ckarr[x].ChuckQuote +
-        "</td><td>" +
-        ckarr[x].EnteredBy +
-        "</td><td>" +
-        ckarr[x].QuoteDate +
-        "</td></tr>";
-    }
-    return output + "</table>";
   }
 }
 

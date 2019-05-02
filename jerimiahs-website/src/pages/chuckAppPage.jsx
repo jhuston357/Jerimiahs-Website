@@ -6,7 +6,7 @@ class ChuckAppPage extends Component {
   };
 
   componentDidMount() {
-    fetch("http://jherver.tk/api/chucks")
+    fetch("https://jherver.tk/api/chucks")
       .then(res => res.json())
       .then(json => {
         this.setState({ chucks: json });
